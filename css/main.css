@@ -1,0 +1,24 @@
+/*BACKGROUND COLOR OF WHOLE PAGE*/
+body {
+	background-color: black; 
+}
+
+/*NAVBAR SECTION*/
+.nav {
+	background-color: forestgreen;
+}
+.nav a {
+	color: black;
+}
+
+img{
+	max-width: inherit;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*INFO BOX SECTION*/
+
+/*span {
+	color: forestgreen;
+}*/
