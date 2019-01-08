@@ -92,11 +92,12 @@ function getZodiac(){
 			myH3.innerText = zodiacs[i].fortune;
 			myImage.src = zodiacs[i].image;
 				return;
-		}
-		// else{
-		// 	alert("Zodiac does not exist, or was not capitalized, please try again.");
-		// 	return;
-		// }
+		} 
 	}
 	
 };
+
+
+	// else{ alert("Zodiac does not exist, please try again.");
+	// 		return;
+	// }
