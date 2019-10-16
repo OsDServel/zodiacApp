@@ -1,3 +1,51 @@
+// $("#libra").hover(function(){
+// 	// var target= document.getElementById('target').value
+// 	// if (target== zodiacs[i].name) {
+// 	// 	target.innerText== zodiacs.date;
+// 	// 	return;
+// 	// }
+// 	// $('target').css('color: green')
+// 	$(this).css('color: green;');
+// })
+// $('#libra').click(function(){
+// 	$('#scorpio').css('color', 'green')
+// })
+// $('#pic').click(function(){
+// 	$('#white').css('backgroundColor', 'yellow');
+// })
+
+$('#list').hover(function(){
+	for(var i= 0; i< zodiacs.length; i++){
+		// var x= event.target;
+		var x= document.getElementsByTagName('li').event.target.value;
+
+		if (x== zodiacs[i].name){
+			x.innerText= zodiacs[i].date;
+				return;
+		}
+	}
+
+})
+
+
+
+
+// function hoverButton(){
+
+// 	for(var i= 0; i<= zodiacs.length; i++) {
+// 		// var input = document.getElementById("userInput")
+// 		var input = document.getElementById("userInput").value;
+
+
+// 	if $(this).value== zodiacs[i].name
+// }
+
+// $('#list').bind('mouseover', function(){
+// 	var id= $(this).attr('id');
+// });
+
+
+
 var zodiacs = [
 	{
 		name: "aquarius",
@@ -82,7 +130,6 @@ var myImage = document.getElementById("image");
 function getZodiac(){
 
 	for(var i= 0; i<= zodiacs.length; i++) {
-		// var input = document.getElementById("userInput")
 		var input = document.getElementById("userInput").value;
 
 		if(input.trim().toLowerCase() == zodiacs[i].name) {
@@ -97,6 +144,14 @@ function getZodiac(){
 	
 };
 
+
+// $('#list').hover(function(){
+// 	var target= document.getElementById('target').value
+// 	if (target== zodiacs[i].name) {
+// 		target.innerText== zodiacs.date;
+// 		return;
+// 	}
+// })
 
 	// else{ alert("Zodiac does not exist, please try again.");
 	// 		return;

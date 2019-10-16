@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>I Want To Make Video Games</title>
+		<title>Zodiac App</title>
 	<!--Bootstrap CDN-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<!--viewport meta tag-->
@@ -26,13 +26,27 @@
 
 	  <input type="text" id="userInput" placeholder="What is your sign?" class="col-10 text-center">
 
-	  <button onclick="getZodiac()">Send</button>
+	  <button onclick="getZodiac()">Enter</button>
 
 	</div>
 
 	<div class="col-2">
-
-
+	<!-- im going to make a list of the dates, that when hover-ed, they will show their the zodiac name and the color will be cooordinated with its element type(earth, water, wind, fire) -->
+	<h2>When is your birthday?</h2>
+	<ul id="list">
+		<li id="libra">Libra</li>
+		<li id="scorpio">Scorpio</li>
+		<li id="sagittarius">Sagittarius</li>
+		<li id="capricorn">Capricorn</li>
+		<li id="aquarius">Aquarius</li>
+		<li id="pisces">Pisces</li>
+		<li id="aries">Aries</li>
+		<li id="taurus">Taurus</li>
+		<li id="gemini">Gemini</li>
+		<li id="cancer">Cancer</li>
+		<li id="leo">Leo</li>
+		<li id="virgo">Virgo</li>
+	</ul>
 
 
 <!-- TRY PLACING AREA THAT PRODUCES THE NAME OF THE SIGH THAT HAS BEEN INPUT IN LARGE LETTERS SO THAT YOU CAN MAKE IT ANIMATED -->
@@ -79,12 +93,21 @@
 
 <!--JAVASCRIPT BOOT-->
 
-<script type="text/javascript" src="js/main.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+<!--Vue-->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+<!--Vue Router-->
+	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+	
+<script type="text/javascript" src="js/main.js"></script>
 
 	</body>
 </html>
